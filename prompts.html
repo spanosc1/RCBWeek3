@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>
-    Sushi
+    Prompts
   </title>
 </head>
 <body>
@@ -19,10 +19,36 @@
       alert(anotherName);
       alert(confirmAdult);
       */
-      var sushi = confirm("Do you like sushi?");
+      
+      /*var sushi = confirm("Do you like sushi?");
       var type_sushi = prompt("What kind of sushi do you like?");
       alert(sushi);
-      alert(type_sushi);
+      alert(type_sushi);*/
+      
+      // ask the user if they like steak
+      var steak = confirm("Do you eat steak?");
+      //If they do, offer them a steak sandwich
+      if(steak){
+        document.write("Here's a steak sandwich! ");
+      }
+      //If they do not, offer them a tofu stir fry
+      else if(!steak){
+        document.write("Here's a tofu stir fry! ");
+      }
+      //Ask the user when their birthyear is
+      var birth = prompt("What is your birthyear?");
+      //If they were born before 1968, their year is lower, tell them they are older than John
+      if(birth < 1968){
+        document.write("You're older than John.");
+      }
+      //If they were born after 1968, their year is higher, tell them they are younger than John
+      else if(birth > 1968){
+        document.write("You're younger than John.");
+      }
+      //If they are born in 1968, their year is equal to John's, tell them they are around the same age as John
+      else if(birth == 1968){
+        document.write("You're around the same age as John.");
+      }
   </script>
 </body>
 </html>
