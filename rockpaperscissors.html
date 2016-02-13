@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+	<div id="game">
+
+	</div>
+	<script type="text/javascript">
+		/*Rock Paper Scissors
+		Ensure player knows rules (confirm)
+		Count to 3
+		Choose a sign randomly, rock, paper, or scissors
+		Compare computers sign with players sign
+			If user is rock and computer is scissors, user wins
+			If user is rock and computer is paper, computer wins
+			If user is rock and computer is rock, draw
+			If user is paper and computer is rock, user wins
+			If user is paper and computer is scissors, computer wins
+			If user is paper and computer is paper, draw
+			If user is scissors and computer is paper, user wins
+			If user is scissors and computer is rock, computer wins
+			If user is scissors and computer is scissors, draw
+		Go back to countdown and repeat*/
+		var computerChoices = ['r', 'p', 's'];
+		var wins = 0;
+		var losses = 0;
+		var ties = 0;
+		document.onkeyup = function(event) {
+			var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+			var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+			if((userGuess == 'r') || userGuess == 'p' || userGuess == 's')
+			{
+				
+				document.querySelector(#game).innerHTML = 'You chose: ' + userGuess + ' The computer chose: ' + computerGuess;
+			}
+			else
+			{
+				alert("Please pick r, p, or s");
+			}
+		}
+	</script>
+</body>
+</html>

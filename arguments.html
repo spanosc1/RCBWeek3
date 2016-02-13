@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise Arguments</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add(x, y, z)
+		{
+			if(isNaN(x) || isNaN(y) || isNaN(z)){
+				alert("Not all values are numbers");
+			}
+			else {
+				return parseInt(x)+parseInt(y)+parseInt(z);
+			}
+		}
+		function multiply(x, y, z)
+		{
+			if(isNaN(x) || isNaN(y) || isNaN(z)){
+				alert("Not all values are numbers");
+			}
+			else {
+				return x*y*z;
+			}	
+		}
+
+		function string(x, y, z)
+		{
+			if(typeof(x) === "string" && typeof(y) === "string" && typeof(z) === "string")
+			{
+				alert("All are strings");
+			}
+			else {
+				alert("Not all are strings");
+			}
+		}
+
+		var one = prompt("Enter a number");
+		var two = prompt("Enter a number");
+		var three = prompt("Enter a number");
+		console.log(add(one, two, three));
+		var one = prompt("Enter a number");
+		var two = prompt("Enter a number");
+		var three = prompt("Enter a number");
+		console.log(multiply(one, two, three));
+		var one = prompt("Enter a string");
+		var two = prompt("Enter a string");
+		var three = prompt("Enter a string");
+		console.log(string(one, two, three));
+	</script>
+</body>
+</html>
